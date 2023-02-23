@@ -1,0 +1,26 @@
+.TodoList {
+  background-color: lightblue;
+  width: 400px;
+}
+
+.inputSection input,
+.inputSection button {
+  height: 40px;
+  font-size: 20px;
+}
+
+.TodoCard {
+  background-color: lightcoral;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.completeTodo {
+  background-color: rgb(212, 173, 173);
+  border: 1px solid #7c7474;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
