@@ -9,7 +9,6 @@ const Todo = () => {
   const [todoList, setTodoList] = useState([]);
 
   const addTodoHandler = (text) => {
-    console.log(text);
     setTodoList([...todoList, { value: text, select: false }]);
   };
 

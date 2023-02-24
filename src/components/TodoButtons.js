@@ -1,8 +1,14 @@
+import Button from '@mui/material/Button';
+
 const TodoButtons = ({ deleteAll, reload, style }) => {
   return (
     <>
-      <button onClick={reload}>Reload</button>
-      <button onClick={deleteAll}>Delete</button>
+      <Button variant="outlined" onClick={reload}>
+        Reload
+      </Button>
+      <Button variant="outlined" onClick={deleteAll}>
+        Delete
+      </Button>
     </>
   );
 };

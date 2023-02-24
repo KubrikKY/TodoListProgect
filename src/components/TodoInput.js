@@ -3,20 +3,25 @@ import { useState } from 'react';
 const TodoInput = ({ addTodo, style }) => {
   const [todoValue, setTodoValue] = useState('');
 
-  const createNewTodo = () => {
+  const submitHandler = (e) => {
+    e.preventDefault();
     if (todoValue) {
       addTodo(todoValue);
     }
+    setTodoValue('');
   };
 
   return (
     <div className={style.inputSection}>
-      <input
-        type="text"
-        placeholder="Todo"
-        onChange={(e) => setTodoValue(e.target.value)}
-      />
-      <button onClick={createNewTodo}>Submit</button>
+      <form onSubmit={submitHandler}>
+        <input
+          type="text"
+          placeholder="Todo"
+          onChange={(e) => setTodoValue(e.target.value)}
+          value={todoValue}
+        />
+        <button>Submit</button>
+      </form>
     </div>
   );
 };
