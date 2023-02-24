@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 const TodoButtons = ({ deleteAll, reload, style }) => {
   return (
     <>
-      <Button variant="outlined" onClick={reload}>
+      <Button variant="outlined" onClick={reload} style={{ margin: 10 }}>
         Reload
       </Button>
       <Button variant="outlined" onClick={deleteAll}>

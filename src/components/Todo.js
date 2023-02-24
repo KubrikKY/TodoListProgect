@@ -39,14 +39,16 @@ const Todo = () => {
   };
 
   return (
-    <div className={style.TodoList}>
-      <h1>Todo App</h1>
-      <TodoInput addTodo={addTodoHandler} style={style} />
-      <TodoButtons
-        deleteAll={deleteAll}
-        reload={resetTodoLisrt}
-        style={style}
-      />
+    <>
+      <div className={style.TodoList}>
+        <h1>Todo App</h1>
+        <TodoInput addTodo={addTodoHandler} style={style} />
+        <TodoButtons
+          deleteAll={deleteAll}
+          reload={resetTodoLisrt}
+          style={style}
+        />
+      </div>
       {todoList &&
         todoList
           .sort((a, b) => (b.select < a.select ? 1 : -1))
@@ -61,7 +63,7 @@ const Todo = () => {
               />
             );
           })}
-    </div>
+    </>
   );
 };
 

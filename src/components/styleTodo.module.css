@@ -1,12 +1,55 @@
 .TodoList {
-  background-color: lightblue;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
   width: 400px;
+  border-radius: 8px;
+  border: #1976d2 solid 1px;
+  padding: 20px 10px;
+  margin: 20px auto;
+  transition: background-color 0.2s;
+}
+
+.TodoList h1 {
+  color: #1976d2;
+}
+
+.TodoList:hover {
+  background-color: #f0f4f7;
+}
+
+.inputSection form {
+  margin: 20px;
 }
 
 .inputSection input,
 .inputSection button {
   height: 40px;
   font-size: 20px;
+  box-sizing: border-box;
+  border: #1976d2 solid 1px;
+  background-color: #fff;
+  color: #1976d2;
+  padding: 5px;
+  background: transparent;
+}
+
+.inputSection input {
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+}
+
+.inputSection button {
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+}
+
+.inputSection form {
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.inputSection form:hover {
+  opacity: 1;
 }
 
 .TodoCard {
@@ -15,12 +58,19 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  width: 400px;
+  margin: 0 auto 10px;
+  border-radius: 8px;
+  color: #fff;
 }
 
 .completeTodo {
   background-color: rgb(212, 173, 173);
-  border: 1px solid #7c7474;
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  width: 400px;
+  margin: 0 auto 10px;
+  border-radius: 8px;
+  color: #fff;
 }
